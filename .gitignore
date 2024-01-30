@@ -1,0 +1,19 @@
+# General
+.DS_Store
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+*.db
+*.suo
+
+# Visual Studio Code
+.vscode/
+.settings.json
+
+# Xcode
+.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
