@@ -11,12 +11,12 @@ Usage: key-remapper.zsh [OPTIONS] "<action>:<source-keycode>:<destination-keycod
 
 Options:
   -k, --keyboard <keyboardName>   Specify the keyboard name (default: "$PRODUCT")
-  -d, --dry-run                                    Print the hidutil command without invoking it
-  -h, --help                                         Show this help message and exit
+  -d, --dry-run                   Print the hidutil command without invoking it
+  -h, --help                      Show this help message and exit
 
 Actions:
-  remap                                              Remap a single key
-  swap                                                Swap the mappings of two keys
+  remap                           Remap a single key
+  swap                            Swap the mappings of two keys
 
 Example for remapping:
   key-remapper.zsh --keyboard "My Keyboard" "remap:0x7000000e7:0x7000000e6" "remap:0x700000035:0x700000064"
@@ -118,7 +118,7 @@ main() {
     hidutil property --matching "$matchingJson" --set "$configJson"
     echo "\n-------------------------------------------------------------------------"
     echo "\nRemapping completed, check your current configuration by running command:"
-    echo "\nhidutil property --matching '$matchingJson' --get"
+    echo "\nhidutil property --matching '$matchingJson' --get 'UserKeyMapping'"
   fi
 
   echo ""

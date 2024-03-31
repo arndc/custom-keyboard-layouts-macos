@@ -38,11 +38,11 @@ main() {
 
     if [ -z "$keyboard" ]; then
         hidutil_command="hidutil property --set '$CONFIG_JSON'"
-        get_command="hidutil property --get"
+        get_command="hidutil property --get 'UserKeyMapping'"
     else
         local -r matchingJson='{"Product": "'$keyboard'"}'
         hidutil_command="hidutil property --matching '$matchingJson' --set '$CONFIG_JSON'"
-        get_command="hidutil property --matching '$matchingJson' --get"
+        get_command="hidutil property --matching '$matchingJson' --get 'UserKeyMapping'"
     fi
 
     if [ "$DRY_RUN" = true ]; then
