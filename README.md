@@ -22,7 +22,7 @@ also available via [Homebrew](https://brew.sh/): `brew install --cask ukelele`
 1. Download the desired bundle's `.bundle` file from the directory [layouts](./layouts)
 2. In Ukulele, go to `File > Install` and select the desired bundle for installation
 3. Log out or restart your Mac to apply the changes
-4. In **System Settings** > **Keyboard** > **Input Sources**, add the layout to your input sources.
+4. In **System Settings** > **Keyboard** > **Input Sources**, add the layout to your input sources
 
 ## Uninstalling a layout
 
